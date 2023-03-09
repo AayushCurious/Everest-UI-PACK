@@ -1,0 +1,59 @@
+{
+  "name": "clickalicious/rng",
+  "description": "The secure Pseudo Random Number Generator (PRNG) for PHP.",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Benjamin Carl",
+      "email": "opensource@clickalicious.de",
+      "homepage": "https://www.clickalicious.de",
+      "role": "Lead"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.6.0",
+    "ext-openssl": "*",
+    "roave/security-advisories": "dev-master as 1.0.x-dev",
+    "paragonie/random_compat": "^2.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.7",
+    "codacy/coverage": "^1.0.5",
+    "symfony/var-dumper": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clickalicious\\Rng\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Clickalicious\\Rng\\": "tests/"
+    }
+  },
+  "keywords": [
+    "RNG",
+    "PRNG",
+    "Random",
+    "Randomize",
+    "Number",
+    "Generator",
+    "mersenne",
+    "mtcrypt",
+    "openssl"
+  ],
+  "homepage": "https://github.com/clickalicious/rng",
+  "license": "MIT",
+  "support": {
+    "email": "opensource@clickalicious.de",
+    "issues": "https://github.com/clickalicious/rng/issues",
+    "wiki": "https://github.com/clickalicious/rng/wiki",
+    "tests": "https://clickalicious.github.io/rng"
+  },
+  "config": {
+    "bin-dir": "bin",
+    "preferred-install": "dist"
+  }
+}
